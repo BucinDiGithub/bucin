@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+    body {
+    background-color: #080612;
+    }
+       h1,h2 {
+ color: white;
+ font-family: Kelly Slab;
+
+ }
+  .btn {
+  font-family: Kelly Slab;
+  font-size: 15px;
+    background: #22a4cf;
+    color: white;
+    
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    }
+    .mau {
+    border: green 1px solid;
+    }
+    .gak {
+    border: red 1px solid;
+    }
+    </style>
+    <title>Just For You &#129505</title>
+  </head>
+  <body>
+ <center>
+    <img src="https://i.ibb.co/N6PTcqX/heart-happy.gif" alt="NaisID" style="height: 280px" />
+    <h1>Hai Cantik</h1>
+    <h2>Kamu mau gak jadi pacar aku?</h2>
+   
+    <div>
+      <button class="btn mau" onclick="mau()">MAU</button>
+      <button class="btn gak" onmouseover="gak(this)">GAK</button>
+    </div>
+    
+    <script>
+      function mau() {
+      
+Swal.fire({
+    title: "Love U",
+    text: "isi pesan nya jangn di ubah ya:*",
+    type: "success"
+}).then(function() {
+    window.location = "https://wa.me/6289627655877?text=iya aku mau kok ><";
+});
+}
+     
+     var audio = new Audio;
+     audio.src = "https://tolongg.herokuapp.com/tolong.mp3";
+     
+      function gak(ini) {
+      audio.play();
+      
+        ini.style.position = "absolute";
+        ini.style.left = `${Math.floor(Math.random() * 90)}%`;
+        ini.style.top = `${Math.floor(Math.random() * 90)}%`;
+      }
+    </script>
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>
